@@ -35,13 +35,40 @@ class Rombo extends Figura {
         super(colorFondo, posicionX, posicionY, hijos, padre);
     }
 }
-
+var global;
 //Arreglo para almacenar los objetos creados
 var figuras= [];
 
 $( "#save" ).click(function(event) {
-	$("#save").attr( "download", $("#titulo").val() +".json" );
-    this.href = 'data:plain/text,' + JSON.stringify(figuras);
+	//$("#save").attr( "download", $("#titulo").val() +".json" );
+    //this.href = 'data:plain/text,' + JSON.stringify(figuras);
+
+    var listaFiguras = JSON.stringify(figuras);
+    localStorage.setItem('figuras', listaFiguras);
+    console.log("Guardado")
+
+});
+
+$("#load").click(function(e){
+
+    //$.getJSON("./test.json", function(json) {
+    //console.log(json); // this will show the info it in firebug console
+    //});
+    
+    var myContent = localStorage.getItem('figuras');
+    //console.log(myContent);
+    var parsed = JSON.parse(myContent);
+    var arr = [];
+    for(var x in parsed){
+        arr.push(parsed[x]);
+    }
+    //global = arr;
+    //myContent.forEach(function(element) {
+    console.log(arr);
+    //});
+
+
+    
 });
 
 //Funcion exportar
