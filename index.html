@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flujo de procesos</title>
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <title>Flat Login Form 3.0</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
-<body class="documento">
 
-	<form class="header">
-		<h1>
-		<input type="text" name="titulo" placeholder="Nombre del diagrama" required id="titulo">
-		</h1>
-		<nav>
-			<a href="#" id="load" class="btnExportar">Cargar</a>			
-			<a href = "#" id = "save" class="btnExportar">Guardar</a>
-			<a href = "#" id = "exportar" class="btnExportar" download="">Exportar</a>
-		</nav>
-
-
-	</form>
-	<div class="contenedor" id="draggable">
-		<div class="figuras" id="draggable">
-			<div class="figura cuadrado"></div>
-			<div class="figura circulo"></div>
-			<div class="figura rombo"></div>
-			<div class="figura triangulo"></div>
-			<!--<div class="figura otro"></div>-->
-		</div>
-		<div class="flujo" id="diagrama">
-			Realiza tu diagrama
-		</div>
-	</div>
-	<footer class="footer">
-		Programación script 2017 - I
-	</footer>
-
-<!-- <div id="draggable" class="ui-widget-content figura">
- <input type="text" placeholder="Escribir responsable"></input>
+<body>
+  
+<!-- Form Mixin-->
+<!-- Input Mixin-->
+<!-- Button Mixin-->
+<!-- Pen Title-->
+<div class="pen-title">
+  <h1>Diagrama Script</h1>
 </div>
+<!-- Form Module-->
+<div class="module form-module">
+  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
     
-<div id="draggable" class="ui-widget-content figura">
- <input type="text" placeholder="Escribir responsable"></input>
-</div> -->
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+  </div>
+  <div class="form" action="">
+    <h2>Login to your account</h2>
+    <form>
+      <input type="text" placeholder="Username" value="admin"/>
+      <input type="password" placeholder="Password" value="admin"/>
+      <a href="dfd.html"><button type="button">button</button></a>
+    </form>
+  </div>
+  <div class="form">
+    <h2>Create an account</h2>
+    <form>
+      <input type="text" placeholder="Username"/>
+      <input type="password" placeholder="Password"/>
+      <input type="email" placeholder="Email Address"/>
+      <input type="tel" placeholder="Phone Number"/>
+      <button>Register</button>
+    </form>
+  </div>
+  <!--<div class="cta"><a href="#">Forgot your password?</a></div>-->
+</div>
+ </body>
 </html>
