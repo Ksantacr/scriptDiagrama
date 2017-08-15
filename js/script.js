@@ -49,6 +49,7 @@ class Otra extends Figura {
 //Arreglo para almacenar los objetos creados
 var figuras= [];
 var generarId = 0;
+var elementosSeleccionados = 0 ;
 
 //Editar input
 var inputCambiado = function(e){
@@ -105,7 +106,6 @@ $("#load").click(function(e){
             elementos[x].texto, elementos[x].id);
             figuras.push(tmp);
             break;
-
         }
 
         var elemento = $("<div></div>");
@@ -144,8 +144,48 @@ $("#exportar").click(function(e){
 });
 
 //Editar los valores de una figura
+var actual, nuevo;
 var mostrarOpciones = function(){
    //console.log($(this).hasClass("rombo"))
+
+   elementosSeleccionados+=1;
+
+   //if(nuevo != null && )
+
+   if(elementosSeleccionados == 1){
+        actual = $(this);
+   }
+    if(elementosSeleccionados==2){
+        console.log("seleccionaste 2");
+        nuevo = $(this);
+        
+
+        var cuadrado = $("<div></div>");
+        var ancho = Math.abs(nuevo[0].offsetLeft-actual[0].offsetLeft);
+        var alto =  Math.abs(nuevo[0].offsetTop -actual[0].offsetTop);
+        cuadrado.addClass("linea");
+        cuadrado.css({
+            left: actual[0].offsetLeft+35,
+            top: actual[0].offsetTop+35,
+            width: ancho,
+            height: alto
+            //background: 'red',
+            //transform: "rotate(-45deg)"
+            //position: 'absolute'
+        });
+
+        
+
+        //console.log(nuevo[0].style.left);
+        //console.log(actual[0].style.left);
+        //cuadrado.addClass("figura");
+        $("#diagrama").append(cuadrado);
+
+        elementosSeleccionados = 0;
+        nuevo = null;
+        actual= null;
+    }
+
 };
 //Hacer la figura arrastrable
 $(".figura").draggable({

@@ -193,7 +193,19 @@ figura ::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color:    blue;
   font-style:italic;
 }
-line {
-    stroke:rgb(0,0,0);
-    stroke-width:3;
+.linea {
+    //border-bottom: 1px solid black;
+    position: absolute;
+    //transform: rotateX(180deg);
+    //display:inline-block;
+    background: 
+       linear-gradient(to top right,
+           rgba(0,0,0,0) 0%,
+           rgba(0,0,0,0) calc(50% - 0.8px),
+           rgba(0,0,0,1) 50%,
+           rgba(0,0,0,0) calc(50% + 0.8px),
+           rgba(0,0,0,0) 100%);
+
+    //background:url(http://i.piccy.info/i7/c7a432fe0beb98a3a66f5b423b430423/1-5-1789/1066503/lol.png);
+    //background-size:100% 100%;
 }
