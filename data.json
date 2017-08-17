@@ -1,0 +1,70 @@
+{"diagramas":[
+    {
+        "titulo": "Documento1",
+        "figuras": [
+            {
+            "id": "0",
+            "tipo": "rombo",
+            "colorFondo": "#4CAF50",
+            "posX": 200,
+            "posY": 200,
+            "responsable": "Joel",
+            "hijos": ["1"]
+            },
+            {"id": "1",
+            "tipo": "circulo",
+            "colorFondo": "#F44336",
+            "posX": 300,
+            "posY": 300,
+            "responsable": "Kevin",
+            "hijos": ["2"]
+            },
+            {"id": "2",
+            "tipo": "circulo",
+            "colorFondo": "#F44336",
+            "posX": 100,
+            "posY": 500,
+            "responsable": "Andrea",
+            "hijos": []}
+        ],
+        "version": 1
+    },
+    {
+    "titulo": "Documento2",
+    "figuras": [
+            {
+            "id": "0",
+            "tipo": "rectangulo",
+            "colorFondo": "#1976D2",
+            "posX": 300,
+            "posY": 150,
+            "responsable": "Dayanara",
+            "hijos": ["2"]
+            },
+            {"id": "1",
+            "tipo": "cuadrado",
+            "colorFondo": "#FF4081",
+            "posX": 400,
+            "posY": 500,
+            "responsable": "Kevin",
+            "hijos": ["0"]
+            },
+            {"id": "2",
+            "tipo": "rombo",
+            "colorFondo": "#4CAF50",
+            "posX": 500,
+            "posY": 100,
+            "responsable": "Andrea",
+            "hijos": []},
+            {"id": "3",
+            "tipo": "cuadrado",
+            "colorFondo": "#FF4081",
+            "posX": 100,
+            "posY": 200,
+            "responsable": "Rafael",
+            "hijos": ["0"]}
+        ],
+    "version": 2
+    }
+]
+}

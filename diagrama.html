@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diagrama de flujo</title>
+
+    <script src="js/jquery-latest.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery-timing.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/jquery.connections.js"></script>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="documento">
+    <form class="header">
+		<h1>
+		<input type="text" name="titulo" placeholder="Nombre del diagrama" required id="titulo">
+		</h1>
+		<nav>
+			<a href="#" id="cargar" class="btn">Cargar</a>			
+			<a href = "#" id = "guardar" class="btn">Guardar</a>
+            <a href = "#" id = "exportar" class="btn" download="">Exportar</a>
+            <a href="index.html" id="" class="btn salir">Salir</a>
+		</nav>
+	</form>
+
+<div class="contenedor" id="draggable">
+	<div class="figuras" id="draggable">
+		<div class="figura cuadrado"></div>
+		<div class="figura circulo"></div>
+		<div class="figura rombo"></div>
+		<div class="figura rectangulo"></div>
+		<!--<div class="figura otro"></div>-->
+	</div>
+    <div id="diagrama"></div>
+</div>
+<footer>
+	<select name="" id="flujos">
+		
+	</select>
+</footer>
+  <script src="js/objetos.js"></script>
+    <script src="js/script.js">   
+    </script>
+</body>
+</html>
